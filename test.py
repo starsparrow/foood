@@ -3,6 +3,13 @@ from Recipe import Recipe
 
 blah = Recipe('dish')
 
-print(blah.name)
-print(blah.ingredients)
-print(blah.weight)
+blah.print_recipe()
+
+blah.set_name('dish2')
+blah.eat()
+blah.set_ingredients(['onion','potato','lentils','curry sauce'])
+blah.set_weight('green')
+blah.add_tag('lol what')
+blah.set_note('this was good')
+
+blah.print_recipe()
