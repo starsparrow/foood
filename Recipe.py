@@ -49,12 +49,14 @@ class Recipe:
 		'''Removes a tag from the recipe'''
 		self.tags.delete(tag)
 
-	def print_recipe(self):
-		'''Prints all attributes'''
-		print("Recipe: " + self.name)
-		print("Ingredients: " + ", ".join(self.ingredients))
-		print("Weight: " + self.weight)
-		print("You have had this " + str(self.eatcount) + " times.")
-		print("You last ate this on " + self.lasteaten)
-		print("Notes: " + self.notes)
-		print("Tags: " + ", ".join(self.tags))
+	def get_data(self):
+		'''Returns attributes in a dict'''
+		data = {}
+		data["name"] = self.name
+		data["ingredients"] = self.ingredients
+		data["weight"] = self.weight
+		data["eatcount"] = self.eatcount
+		data["lasteaten"] = str(self.lasteaten)
+		data["notes"] = self.notes
+		data["tags"] = self.tags
+		return data
