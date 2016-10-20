@@ -60,3 +60,9 @@ class Recipe:
 		data["notes"] = self.notes
 		data["tags"] = self.tags
 		return data
+
+	def print_data(self):
+		'''Prints the attributes...mostly just for testing?'''
+		data = self.get_data()
+		for attr in data:
+			print("{0}: {1}".format(attr, data[attr]))

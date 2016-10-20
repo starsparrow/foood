@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 from Recipe import Recipe
 
-blah = Recipe('dish')
+blah = Recipe('Vegeable Curry')
 
-print(blah.get_data())
+blah.print_data()
 
-blah.set_name('dish2')
+blah.set_name('Vegetable Curry')
+blah.set_ingredients(['rice', 'onion', 'potato', 'chickpeas', 'curry sauce'])
+blah.set_weight('Hearty')
+blah.add_tag('Indian', 'spicy', 'vegetarian')
 blah.eat()
-blah.set_ingredients(['onion','potato','lentils','curry sauce'])
-blah.set_weight('green')
-blah.add_tag('lol what')
-blah.set_note('this was good')
+blah.set_note('This was delicious!!')
 
-print(blah.get_data())
+
+
+blah.print_data()
