@@ -3,6 +3,7 @@
 from datetime import datetime
 
 class Recipe:
+	'''Represents one particular dish that is a component of a meal.'''
 	def __init__(self, name):
 		self.name = name
 		self.ingredients = []
@@ -11,46 +12,47 @@ class Recipe:
 		self.lasteaten = 'Never'
 		self.notes = ''
 		self.tags = []
+		self.picture = ''
 
 	def load(self):
-		'''Reads the recipe from the database'''
+		'''Reads the recipe from the database.'''
 		pass
 
 	def save(self):
-		'''Writes the recipe to the database'''
+		'''Writes the recipe to the database.'''
 		pass
 
 	def eat(self):
-		'''Update stats when this item is chosen for a meal'''
+		'''Update stats when this item is chosen for a meal.'''
 		self.eatcount += 1
 		self.lasteaten = datetime.now()
 
 	def set_note(self, note):
-		'''Updates the note on file for the recipe'''
+		'''Updates the note on file for the recipe.'''
 		self.notes = note
 
 	def set_name(self, name):
-		'''Updates the name of the recipe'''
+		'''Updates the name of the recipe.'''
 		self.name = name
 
 	def set_ingredients(self, ingredients):
-		'''Updates the things that go into the recipe'''
+		'''Updates the things that go into the recipe.'''
 		self.ingredients = ingredients
 
 	def set_weight(self, weight):
-		'''Updates the weight of the recipe'''
+		'''Updates the weight of the recipe.'''
 		self.weight = weight
 
 	def add_tag(self, tag):
-		'''Adds a tag to the recipe'''
+		'''Adds a tag to the recipe.'''
 		self.tags.append(tag)
 
 	def remove_tag(self, tag):
-		'''Removes a tag from the recipe'''
+		'''Removes a tag from the recipe.'''
 		self.tags.delete(tag)
 
 	def get_data(self):
-		'''Returns attributes in a dict'''
+		'''Returns attributes in a dict.'''
 		data = {}
 		data["name"] = self.name
 		data["ingredients"] = self.ingredients
