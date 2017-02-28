@@ -1,10 +1,28 @@
 body {
-    color: #222;
+    color: #AAA;
+    background-color: #222;
     font-family: sans-serif;
 }
 
 .meal {
     font-size: 175%;    
     font-style: italic;
+}
+
+/* unvisited link */
+a:link {
+    color: #AAA;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #AAA;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: underline;
 }
 
