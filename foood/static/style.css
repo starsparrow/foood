@@ -1,3 +1,10 @@
 body {
     color: #222;
+    font-family: sans-serif;
 }
+
+.meal {
+    font-size: 175%;    
+    font-style: italic;
+}
+

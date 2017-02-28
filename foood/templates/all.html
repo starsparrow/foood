@@ -1,8 +1,8 @@
 {% extends "layout.html"  %}
 {% block body %}
-
+<h2>Now viewing all meals [<a href=./>View random meal</a>]</h2>
 {% for meal in meals %}
-<h2>{{ meal  }}</h2>
+<li class=meal>{{ meal  }}</li>
 {% endfor %}
 
 {% endblock %}

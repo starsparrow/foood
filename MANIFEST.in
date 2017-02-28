@@ -1,3 +1,0 @@
-graft foood/templates
-graft foood/static
-include foood/foooddata.py
