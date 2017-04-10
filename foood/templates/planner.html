@@ -1,0 +1,11 @@
+{% extends "layout.html"  %}
+
+{% block body %}
+
+<h2>Now viewing randomized meal plan [<a href="./all">See all meals</a>]</h2>
+
+{% for meal in meals %}
+<p class=meal>{{ meal }}</p>
+{% endfor %}
+
+{% endblock %}
